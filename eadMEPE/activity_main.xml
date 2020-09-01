@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/f"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/e2"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/img_museu" />
+
+        <TextView
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/museu_do_estado_de_pernambuco"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bAgenda"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:onClick="agendar"
+            android:text="@string/agendar_visita"
+            android:textSize="14sp"
+            style="@style/btn_w"/>
+
+        <Button
+            android:id="@+id/bMapa"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:onClick="localMaps"
+            android:text="@string/localiza_o"
+            android:textSize="14sp"
+            style="@style/btn_w"/>
+
+        <Button
+            android:id="@+id/bSite"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:onClick="webSite"
+            android:text="@string/web_site"
+            style="@style/btn_w"/>
+
+        <Button
+            android:id="@+id/bDoar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:onClick="doar"
+            android:text="@string/doa_o"
+            style="@style/btn_w"/>
+    </LinearLayout>
+
+</LinearLayout>
